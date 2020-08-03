@@ -35,7 +35,7 @@ public class IndoorRoom implements Renderable {
                 data.getMaterial(BuildingDefaults.getDefaultsFor(data.getBuildingPart().getTags()).materialWall),
                 data.getPolygon(),
                 data.getTopOfTopLevelHeightAboveBase(),
-                data.getRenderableLevels().contains(data.getMaxLevel()));
+                data.getRenderableLevels().contains(data.getMaxLevel()), data);
     }
 
     private List<IndoorWall> splitIntoIndoorWalls(){
